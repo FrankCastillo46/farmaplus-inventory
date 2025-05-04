@@ -75,15 +75,16 @@ cd ../frontend && npm install && npm run dev
 
 ## 🗄️ Endpoints de la API
 
-| Ruta                       | Método | Descripción                      |
-| -------------------------- | ------ | -------------------------------- |
-| `/api/auth/login`          | POST   | Autentica usuario y devuelve JWT |
-| `/api/productos`           | GET    | Lista todos los productos        |
-| `/api/productos`           | POST   | Crea un producto (admin)         |
-| `/api/ventas`              | POST   | Registra una venta               |
-| `/api/alertas`             | GET    | Productos con stock bajo         |
-| `/api/ventas/hoy`          | GET    | Total de ventas del día actual   |
-| `/api/productos/sin-stock` | GET    | Cantidad de productos sin stock  |
+| Ruta                 | Método | Descripción                               |
+| -------------------- | ------ | ----------------------------------------- |
+| `/api/auth/login`    | POST   | Autentica usuario y devuelve JWT          |
+| `/api/productos`     | GET    | Lista todos los productos                 |
+| `/api/productos`     | POST   | Crea un producto (admin)                  |
+| `/api/productos/:id` | PUT    | Actualiza un producto (admin)             |
+| `/api/productos/:id` | DELETE | Elimina un producto (admin)               |
+| `/api/ventas`        | GET    | Lista todas las ventas                    |
+| `/api/ventas`        | POST   | Registra una venta                        |
+| `/api/alertas`       | GET    | Productos con stock por debajo del umbral |
 
 ## 📝 Guía de Uso
 
